@@ -13,7 +13,6 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        Item[] itemsWithoutNull = new Item[items.length];
         return Arrays.copyOf(items, size);
     }
 
