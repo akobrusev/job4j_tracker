@@ -8,17 +8,13 @@ public class MagicBall {
 
 
     public static void main(String[] args) {
-        int answer=new Random().nextInt(3);
-        String rsl="Может быть";
-        if(answer==0)
-        {
-        rsl="Нет";
+        int answer = new Random().nextInt(3);
+        String rsl = "Может быть";
+        if (answer == 0) {
+            rsl = "Нет";
+        } else if (answer == 1) {
+            rsl = "Да";
         }
-        if(answer==1)
-        {
-        rsl="Да";
-        }
-
         Scanner input = new Scanner(System.in);
         System.out.print("Добро пожаловать. Как Вас зовут? ");
         String name = input.nextLine();
