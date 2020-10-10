@@ -13,7 +13,7 @@ public class StartUI {
                 System.out.println("=== Create a new Item ====");
                 System.out.print("Enter name: ");
                 String name = scanner.nextLine();
-                Item item = new Item(name);
+                Item item = new Item();
                 item.setName(name);
                 tracker.add(item);
             } else if (select == 1) {
@@ -30,7 +30,6 @@ public class StartUI {
                 String name = scanner.nextLine();
                 Item item = new Item();
                 item.setName(name);
-                tracker.replace(id, item);
                 if (tracker.replace(id, item)) {
                     System.out.println("Замена проведена");
                 } else {
@@ -40,8 +39,8 @@ public class StartUI {
                 System.out.println("=== Delete Item ====");
                 System.out.println("Enter id: ");
                 int id = Integer.valueOf(scanner.nextLine());
-                    if (id != -1) {
-                        tracker.delete(id);
+                    if (tracker.delete(id)) {
+                        System.out.println("Заявка удалена");
                     } else {
                         System.out.println("Заявка с таким id не найдена");
                     }
