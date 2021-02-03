@@ -33,6 +33,7 @@ public class StartUI {
                 new DeleteAction(),
                 new ReplaceAction(),
                 new ShowAllItem(),
+                new FindById(),
                 new Exit()
                 /* another actions */
         };
