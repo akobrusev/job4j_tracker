@@ -32,7 +32,7 @@ public class StartUITest {
                 new String[] {"0","1","New item name", "1"}
         );
         UserAction[] actions = {
-                new ReplaceAction(),
+
                 new Exit()
         };
 
@@ -49,7 +49,7 @@ public class StartUITest {
         );
         UserAction[] actions = {
 
-                new DeleteAction(),
+
                 new Exit()
         };
 
