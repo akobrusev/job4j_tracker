@@ -34,6 +34,7 @@ public class StartUI {
                 new ReplaceAction(output),
                 new ShowAllItem(output),
                 new FindById(output),
+                new FindByName(output),
                 new Exit()
                 /* another actions */
         };
