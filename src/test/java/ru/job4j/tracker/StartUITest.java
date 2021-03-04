@@ -37,7 +37,8 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
                 "Menu." + System.lineSeparator() + "0. === Show all Items ====" + System.lineSeparator() +
-                        "1. Exit program" + System.lineSeparator() + "Menu." + System.lineSeparator() + "0. === Show all Items ====" + System.lineSeparator() +
+                        "1. Exit program" + System.lineSeparator() + "Menu." + System.lineSeparator() +
+                        "0. === Show all Items ====" + System.lineSeparator() +
                         "1. Exit program" + System.lineSeparator()
         ));
     }
@@ -55,7 +56,9 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
                 "Menu." + System.lineSeparator() + "0. === Find items by name ====" + System.lineSeparator() +
-                        "1. Exit program" + System.lineSeparator() + "Заявки с таким именем не найдены" + System.lineSeparator() + "Menu." + System.lineSeparator() + "0. === Find items by name ====" + System.lineSeparator() +
+                        "1. Exit program" + System.lineSeparator() + "Заявки с таким именем не найдены"
+                        + System.lineSeparator() + "Menu." + System.lineSeparator() +
+                        "0. === Find items by name ====" + System.lineSeparator() +
                         "1. Exit program" + System.lineSeparator()
         ));
     }
@@ -74,7 +77,9 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
                 "Menu." + System.lineSeparator() + "0. === Find item by Id ====" + System.lineSeparator() +
-                        "1. Exit program" + System.lineSeparator() + "Заявка с таким id не найдена" + System.lineSeparator() + "Menu." + System.lineSeparator() + "0. === Find item by Id ====" + System.lineSeparator() +
+                        "1. Exit program" + System.lineSeparator() + "Заявка с таким id не найдена"
+                        + System.lineSeparator() + "Menu." + System.lineSeparator() +
+                        "0. === Find item by Id ====" + System.lineSeparator() +
                         "1. Exit program" + System.lineSeparator()
         ));
     }
